@@ -10,7 +10,9 @@ plugins {
 group = 'mx.com.roatech'
 version = '0.0.1-SNAPSHOT'
 
-mainClassName = 'mx.com.roatech.petclinic.PetClinicApplication'
+application {
+    mainClass = 'mx.com.roatech.petclinic.PetClinicApplication'
+}
 
 configurations {
     compileOnly {
@@ -25,8 +27,6 @@ allprojects {
 }
 
 dependencies {
-    compile project(':pet-clinic-web')
-    compile project(':pet-clinic-data')
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }

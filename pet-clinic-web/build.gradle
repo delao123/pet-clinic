@@ -1,9 +1,8 @@
 plugins {
     id 'java'
-    id 'application'
 }
 
-mainClassName = 'mx.com.roatech.petclinic.PetClinicApplication'
+
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE'
