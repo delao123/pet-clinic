@@ -1,12 +1,12 @@
 package mx.com.roatech.petclinic.map;
 
 import mx.com.roatech.petclinic.model.Owner;
-import mx.com.roatech.petclinic.services.CrudService;
+import mx.com.roatech.petclinic.services.OwnerService;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class OwnerMapService extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerMapService extends AbstractMapService<Owner,Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -32,4 +32,8 @@ public class OwnerMapService extends AbstractMapService<Owner,Long> implements C
         super.deleteById(id);
     }
 
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
